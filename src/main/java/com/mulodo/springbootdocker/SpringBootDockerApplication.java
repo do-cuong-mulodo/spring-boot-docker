@@ -17,7 +17,7 @@ public class SpringBootDockerApplication {
 	@CrossOrigin
 	@RequestMapping(value = "/")
 	public String helloDocker() {
-		return "Hello Docker World";
+		return "Hello Spring Boot Docker World";
 	}
 
 }

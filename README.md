@@ -64,7 +64,7 @@ docker {
 11. Run "./gradlew build docker"
 to build docker with content in build.gradle
 
-11. Run "docker run -p 8083:8083 -t springio/gs-spring-boot-docker"
+11. Run "docker run -p 8083:8083 -t springio/spring-boot-docker"
 to startup project with docker
 (make sure the port is the same as the port in application.properties)
 
