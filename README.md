@@ -108,6 +108,7 @@ to build docker image with content in build.gradle
 **Note**
 After this build the dependencies is downloaded into folder build/dependency
 and dependencies are also copied into folder build/docker/dependency
+(this is effected by build.gradle)
 
 11. Run "docker run -p 8083:8083 -t springio/spring-boot-docker"
 create instance of image called container
@@ -116,6 +117,11 @@ create instance of image called container
 12. Check containers: Run "docker ps"
 
 13. Delete container: "docker stop 81c723d22865" where 81c723d22865 is the id
+
+**After Installed**
+After installed, for the next time running, Just need to execute 2 commands below:
+1. gradlew build docker
+2. docker run -p 8083:8083 -t springio/spring-boot-docker
 
 Reference:
 https://spring.io/guides/gs/spring-boot-docker/
